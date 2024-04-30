@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="plan.css" />
+
+        <title>Frontend Mentor | Coffeeroasters subscription site</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./imgs/coffeeroaster.svg" alt="Logo Coffeeroasters" />
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="plan.html">Create your plan</a></li>
+                </ul>
+                <div class="nav-bk"></div>
+                <div id="nav-menu-lines" class="active">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                <div id="nav-menu-close">
+                    <div class="close-line line3"></div>
+                    <div class="close-line line4"></div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="background-modal"></div>
+        <div class="modal">
+            <div class="modal-top">
+                <div class="close-X"></div>
+                <h2>Order Summary</h2>
+            </div>
+            <div class="modal-content">
+                <h4>
+                    “I drink my coffee as <span class="coffeeTypeOrder">_____</span>, with a
+                    <span class="coffeeBeanOrder">_____</span> type of bean.
+
+                    <span class="coffeeQtyOrder">_____</span>
+                    <span id="grind-modal"
+                        >ground ala <span class="coffeeGrindOrder">_____</span></span
+                    >, sent to me <span class="coffeeDelivOrder">_____</span>.”
+                </h4>
+                <p>
+                    Is this correct? You can proceed to checkout or go back to plan selection if
+                    something is off. Subscription discount codes can also be redeemed at the
+                    checkout.
+                </p>
+                <div class="modal-bottom">
+                    <h3 class="amount"></h3>
+                    <button class="btn">Checkout <span class="btn-amount"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="container-create-plan">
+                <h1>Create a plan</h1>
+                <p>
+                    Build a subscription plan that best fits your needs. We offer an assortment of
+                    the best artisan coffees from around the globe delivered fresh to your door.
+                </p>
+            </section>
+
+            <section class="selection">
+                <div class="selection-container">
+                    <div class="selector">
+                        <div class="selector-circle-container">
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="coffee-picker">
+                        <div class="selectors">
+                            <div class="selector-number">01</div>
+                            <div class="selector-action">Pick your coffee</div>
+                            <p>
+                                Select from our evolving range of artisan coffees. Our beans are
+                                ethically sourced and we pay fair prices for them. There are new
+                                coffees in all profiles every month for you to try out.
+                            </p>
+                        </div>
+
+                        <div class="selectors">
+                            <div class="selector-number">02</div>
+                            <div class="selector-action">Choose the frequency</div>
+                            <p class="second-p">
+                                Customize your order frequency, quantity, even your roast style and
+                                grind type. Pause, skip or cancel your subscription with no
+                                commitment through our online portal.
+                            </p>
+                        </div>
+
+                        <div class="selectors">
+                            <div class="selector-number">03</div>
+                            <div class="selector-action">Receive and enjoy!</div>
+                            <p>
+                                We ship your package within 48 hours, freshly roasted. Sit back and
+                                enjoy award-winning world-class coffees curated to provide a
+                                distinct tasting experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="planner">
+                <div class="planner-container">
+                    <div class="planner-selectors">
+                        <ul>
+                            <li class="preference planner-selector"><span>01</span> Preferences</li>
+                            <li class="bean-type planner-selector"><span>02</span> Bean type</li>
+                            <li class="quantity planner-selector"><span>03</span> Quantity</li>
+                            <li class="grind planner-selector"><span>04</span> Grind option</li>
+                            <li class="delivery planner-selector"><span>05</span> Deliveries</li>
+                        </ul>
+                    </div>
+                    <div class="dropdowns-container">
+                        <div class="dropdowns">
+                            <div class="preference-dropdown dropdown">
+                                <div class="dropdown-chevron">
+                                    <h2>How do you drink your coffee?</h2>
+                                    <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                                            fill-rule="nonzero"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="options">
+                                    <div id="capsOpt" class="preference-option option">
+                                        <h4>Capsule</h4>
+                                        <p>Compatible with Nespresso systems and similar brewers</p>
+                                    </div>
+                                    <div class="preference-option option">
+                                        <h4>Filter</h4>
+                                        <p>
+                                            For pour over or drip methods like Aeropress, Chemex,
+                                            and V60
+                                        </p>
+                                    </div>
+                                    <div class="preference-option option">
+                                        <h4>Espresso</h4>
+                                        <p>
+                                            Dense and finely ground beans for an intense, flavorful
+                                            experience
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bean-type-dropdown dropdown">
+                                <div class="dropdown-chevron">
+                                    <h2>What type of coffee?</h2>
+                                    <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                                            fill-rule="nonzero"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="options">
+                                    <div class="bean-type-option option">
+                                        <h4>Single origin</h4>
+                                        <p>
+                                            Distinct, high quality coffee from a specific
+                                            family-owned farm
+                                        </p>
+                                    </div>
+                                    <div class="bean-type-option option">
+                                        <h4>Decaf</h4>
+                                        <p>
+                                            Just like regular coffee, except the caffeine has been
+                                            removed
+                                        </p>
+                                    </div>
+                                    <div class="bean-type-option option">
+                                        <h4>Blended</h4>
+                                        <p>
+                                            Combination of two or three dark roasted beans of
+                                            organic coffees
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quantity-dropdown dropdown">
+                                <div class="dropdown-chevron">
+                                    <h2>How much would you like?</h2>
+                                    <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                                            fill-rule="nonzero"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="options">
+                                    <div id="firstQuantity" class="quantity-option option">
+                                        <h4>250g</h4>
+                                        <p>
+                                            Perfect for the solo drinker. Yields about 12 delicious
+                                            cups.
+                                        </p>
+                                    </div>
+                                    <div id="secondQuantity" class="quantity-option option">
+                                        <h4>500g</h4>
+                                        <p>
+                                            Perfect option for a couple. Yields about 40 delectable
+                                            cups.
+                                        </p>
+                                    </div>
+                                    <div id="thirdQuantity" class="quantity-option option">
+                                        <h4>1000g</h4>
+                                        <p>
+                                            Perfect for offices and events. Yields about 90
+                                            delightful cups.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grind-dropdown dropdown">
+                                <div class="dropdown-chevron">
+                                    <h2>Want us to grind them?</h2>
+                                    <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                                            fill-rule="nonzero"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="options">
+                                    <div class="grind-option option">
+                                        <h4>Wholebean</h4>
+                                        <p>
+                                            Best choice if you cherish the full sensory experience
+                                        </p>
+                                    </div>
+                                    <div class="grind-option option">
+                                        <h4>Filter</h4>
+                                        <p>
+                                            For drip or pour-over coffee methods such as V60 or
+                                            Aeropress
+                                        </p>
+                                    </div>
+                                    <div class="grind-option option">
+                                        <h4>Cafetiére</h4>
+                                        <p>
+                                            Course ground beans specially suited for french press
+                                            coffee
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="delivery-dropdown dropdown">
+                                <div class="dropdown-chevron">
+                                    <h2>How often should we deliver?</h2>
+                                    <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                                            fill-rule="nonzero"
+                                        />
+                                    </svg>
+                                </div>
+                               <div class="options">
+                                    <div class="weeklyChoice delivery-option option">
+                                        <h4>Every week</h4>
+                                        <p>
+                                            <span id="amountWeekly"><!--$7.20--></span> per
+                                            shipment. Includes free first-class shipping.
+                                        </p>
+                                    </div>
+                                    <div class="BiWeeklyChoice delivery-option option">
+                                        <h4>Every 2 weeks</h4>
+                                        <p>
+                                            <span id="amountBiWeekly"><!--$9.60--></span> per
+                                            shipment. Includes free priority shipping.
+                                        </p>
+                                    </div>
+                                    <div class="monthlyChoice delivery-option option">
+                                        <h4>Every month</h4>
+                                        <p>
+                                            <span id="amountMonthly"><!--$12.00-->
+                                            </span> per
+                                            shipment. Includes free priority shipping.
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="order">
+                            <div>
+                                <h5>Order Summary</h5>
+                                <p id="order-summary">
+                                    “I drink my coffee<span id="coffeeTypeBeforeText"></span>
+                                    <span class="coffeeType">_____</span>, with a
+                                    <span class="coffeeBean">_____</span> type of bean.
+                                    <span class="coffeeQty">_____</span>
+                                    <span id="grind"
+                                        >ground ala <span class="coffeeGrind">_____</span></span
+                                    >, sent to me <span class="coffeeDeliv">_____</span>.”
+                                </p>
+                            </div>
+                            <button id="createPlan" class="btn">Create my plan!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="nav-footer">
+                    <div class="logo">
+                        <img
+                            src="./imgs/logo-footer.svg"
+                            alt="Logo Coffeeroasters"
+                        />
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">About us</a></li>
+                            <li><a href="plan.html">Create your plan</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons">
+                        <a href="">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                            >
+                                <path
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                            >
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="20"
+                            >
+                                <path
+                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+        <script src="plan-order-scripts.js"></script>
+    </body>
+</html>
